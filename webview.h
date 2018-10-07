@@ -1084,8 +1084,8 @@ static int DisplayHTMLPage(struct webview *w) {
 
     char *url = (char *)calloc(1, strlen(webview_url) + 1);
     char *q = url;
-    char* p
-    for (*p = webview_url + strlen(WEBVIEW_DATA_URL_PREFIX); *q = *p;
+    char *p = webview_url + strlen(WEBVIEW_DATA_URL_PREFIX)
+    for (; *q = *p;
          p++, q++) {
       if (*q == '%' && *(p + 1) && *(p + 2)) {
         sscanf(p + 1, "%02x", q);
