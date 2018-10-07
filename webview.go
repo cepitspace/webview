@@ -10,6 +10,7 @@
 //
 package webview
 
+// #cgo CFLAGS: -std=c99
 /*
 #cgo linux openbsd freebsd CFLAGS: -DWEBVIEW_GTK=1
 #cgo linux openbsd freebsd pkg-config: gtk+-3.0 webkit2gtk-4.0
