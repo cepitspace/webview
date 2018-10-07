@@ -9,7 +9,7 @@
 // engine and supports Linux, MacOS and Windows 7..10 respectively.
 //
 package webview
-
+// #cgo CGO_CFLAGS_ALLOW: -std 
 // #cgo CFLAGS: -std=c99
 /*
 #cgo linux openbsd freebsd CFLAGS: -DWEBVIEW_GTK=1
